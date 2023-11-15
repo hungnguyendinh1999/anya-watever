@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aromata Coffee Shop</title>
+    <!-- FONT AWESOME icons -->
+    <script src="https://kit.fontawesome.com/f20ffe31b3.js" crossorigin="anonymous"></script>
+    <!-- Boostrap and my stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- NAVIGATION BAR -->
+        <div class="container">
+            <nav class="navbar" id="myTopnav">
+                <!-- logo -->
+                <div class="navbar_logo">
+                    <a href="."><img src="image/coffeelogoo.png" alt="website logo" /></a>
+                </div>
+                <links>
+                    <ul class="navbar__links">
+                        <li class="navbar__link"><a href="menu.html">Menu</a></li>
+                        <li class="navbar__link"><a href="about.html">About</a></li>
+                        <li class="navbar__link"><a href="career.html">Career</a></li>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- fancy BANNER SECTION -->
+    <section id="banner">
+        <div id="aboutbanner"></div>
+    </section>
+    <div class="center_stuff">
+        <h1> About Us</h1>
+        <p> Discover the essence of Vietnam in every cup at Aromata Coffee and Tea. We blend tradition, quality, and
+            rich
+            flavors for an unforgettable experience that transcends the ordinary. Welcome to our journey – where each
+            sip is
+            a celebration of culture and craftsmanship.</p>
+    </div>
+    <div class="row">
+        <div id="aboutpic" class="col">
+            <img class="block_image" src="./image/founderpic.png" alt="Founder Thu Thuy" />
+        </div>
+        <div class="col center_stuff">
+            <h2> A Founder's Story</h2>
+            <p>In the mist-kissed highlands of Vietnam, the story of Aromata Coffee & Tea unfolds, curated by the
+                visionary
+                founder, Thu Thuy. With a heart steeped in the love for her homeland, Thu Thuy embarked on a sensory
+                expedition,
+                embracing the whispers of coffee leaves in the breeze. Her journey, a symphony of passion and
+                perseverance,
+                birthed Aromata—a sanctuary where each cup is a voyage through Vietnam's rich coffee heritage. Thu Thuy,
+                the
+                maestro behind the aromatic blends, invites patrons to savor not just coffee but a cultural odyssey,
+                weaving
+                tradition and innovation. Aromata Coffee & Tea, a living testament to Thu Thuy's dream, welcomes all to
+                indulge
+                in the essence of Vietnam, one sip at a time.</p>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!"
+                    role="button"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!"
+                    role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="#!"
+                    role="button"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!"
+                    role="button"><i class="fab fa-instagram"></i></a>
+            </section>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3 footer_blur">
+            &copy; 2023 Aromata Coffee & Tea
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        function myFunction() {
+            // this bit of JavaScript just selects responsive className
+            // when you click on the hamburger icon,
+            var x = document.getElementById("myTopnav");
+            if (x.className === "navbar") {
+                x.className += " hamburger";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+
+</html>
