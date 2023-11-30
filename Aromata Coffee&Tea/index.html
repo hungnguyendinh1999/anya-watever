@@ -20,7 +20,7 @@
             <nav class="navbar" id="myTopnav">
                 <!-- logo -->
                 <div class="navbar_logo">
-                    <a href="."><img src="image/coffeelogoo.png" alt="website logo" /></a>
+                    <a href="."><img src="https://haanya.neocities.org/images/coffeelogoo.png" alt="website logo" /></a>
                 </div>
                 <links>
                     <ul class="navbar__links">
@@ -38,7 +38,23 @@
     </header>
     <!-- fancy BANNER SECTION -->
     <section id="banner">
-        <div id="bannerimage" class="fade-in-image" title="Banner"></div>
+        <div class="slideshow-container bannerimage" >
+
+            <div class="mySlides ">
+              <img src="./images/slideshow/slide_1.JPG" style="width:100%">
+              <div class="text black-text"><h1></h1></div>
+            </div>
+          
+            <div class="mySlides ">
+              <img src="./images/slideshow/slide_2.JPG" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <img src="./images/slideshow/slide_3.png" style="width:100%">
+            </div>
+          
+          </div>
+            <!-- <div id="bannerimage" class="fade-in-image" title="Banner"></div> -->
     </section>
 
     <!-- OPENING HOURS AND LOCATION SECTION -->
@@ -52,7 +68,7 @@
         <div class="container">
             <div class="row bg_color_block_be">
                 <div id="hoursPic" class="col">
-                    <img src="image/cafe_space.png" alt="coffee space" title="Aromata Coffee & Tea Space" />
+                    <img src="https://haanya.neocities.org/images/cafe_space.png" alt="coffee space" title="Aromata Coffee & Tea Space" />
                 </div>
                 <div id="hoursText" class="col">
                     <div class="center_stuff">
@@ -95,7 +111,7 @@
 
             </div>
             <div id="menuDemoPic" class="col">
-                <img src="image/menuphoto.png" title="Drinks" />
+                <img src="https://haanya.neocities.org/images/menuphoto.png" title="Drinks" />
             </div>
         </div>
 
@@ -108,7 +124,7 @@
             <!-- Photo Gallery array -->
             <div class="box">
                 <div class="imgBx">
-                    <img src="./image/home_gallery/pic_1.jpg" alt="drinks" title="Coffee" />
+                    <img src="https://haanya.neocities.org/images/home_gallery/pic_1.jpg" alt="drinks" title="Coffee" />
                 </div>
                 <div class="content">
                     <div>
@@ -120,7 +136,7 @@
             </div>
             <div class="box">
                 <div class="imgBx">
-                    <img src="./image/home_gallery/pic_2.jpg" alt="drinks" title="Mint Mojito Coffee" />
+                    <img src="https://haanya.neocities.org/images/home_gallery/pic_2.jpg" alt="drinks" title="Mint Mojito Coffee" />
                 </div>
                 <div class="content">
                     <div>
@@ -133,7 +149,7 @@
             </div>
             <div class="box">
                 <div class="imgBx">
-                    <img src="./image/home_gallery/pic_3.jpg" alt="drinks" title="Egg Coffee" />
+                    <img src="https://haanya.neocities.org/images/home_gallery/pic_3.jpg" alt="drinks" title="Egg Coffee" />
                 </div>
                 <div class="content">
                     <div>
@@ -147,7 +163,7 @@
             </div>
             <div class="box">
                 <div class="imgBx">
-                    <img src="./image/home_gallery/pic_4.jpg" alt="drinks" title="Cold Brew Tonic" />
+                    <img src="https://haanya.neocities.org/images/home_gallery/pic_4.jpg" alt="drinks" title="Cold Brew Tonic" />
                 </div>
                 <div class="content">
                     <div>
@@ -191,7 +207,7 @@
         crossorigin="anonymous"></script>
     <script>
         function myFunction() {
-            // this bit of JavaScript just selects responsive className
+            // this JavaScript just selects responsive className
             // when you click on the hamburger icon,
             var x = document.getElementById("myTopnav");
             if (x.className === "navbar") {
@@ -199,6 +215,21 @@
             } else {
                 x.className = "navbar";
             }
+        }
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
         }
     </script>
 </body>
