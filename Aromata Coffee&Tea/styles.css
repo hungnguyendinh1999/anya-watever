@@ -193,14 +193,12 @@ nav ul li {
   width: 100%;
 }
 
-#aboutbanner {
-  width: 100%;
-  background-image: url(https://haanya.neocities.org/images/bg2.png);
-  height: 50vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 8.5%;
+#background-video {
+  /* object-fit: cover; */
+  width: auto;
+  height: 80vh;
+  top: 0;
+  left: 0;
 }
 
 #menubanner {
@@ -291,7 +289,26 @@ img {
   max-width: 100%;
   position: relative;
   margin: auto;
+  /* height:530px; */
 }
+
+/* #aboutpic_founder1 {
+  background-image: url("https://haanya.neocities.org/images/founderpic.jpg");
+  background-size: cover;
+  grid-area: left2;
+}
+
+#aboutpic_founder2 {
+  background-image: url("founder_2.png");
+  background-size: cover;
+  grid-area: left2;
+}
+
+#aboutpic_founder3 {
+  background-image: url("founder_3.png");
+  background-size: cover;
+  grid-area: left2;
+} */
 
 /* Caption text */
 .text {
@@ -624,6 +641,9 @@ img {
 .wrapper {
   display: grid;
   grid-template-columns: 41% 59%;
+  grid-template-areas:
+  "left1 right1"
+  "left2 right2";
 }
 
 .aboutpic {
