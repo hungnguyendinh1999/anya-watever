@@ -75,14 +75,14 @@
       </p>
       <div class="container">
         <div class="row bg_color_block_be">
-          <div id="hoursPic" class="col">
+          <div id="hoursPic" class="col-lg-6 col-xs-12">
             <img
               src="https://haanya.neocities.org/images/cafe_space.png"
               alt="coffee space"
               title="Aromata Coffee & Tea Space"
             />
           </div>
-          <div id="hoursText" class="col">
+          <div id="hoursText" class="col-lg-6 col-xs-12">
             <div class="center_stuff">
               <h2>Hours/Location</h2>
               <p>Opening Hours:</p>
@@ -104,7 +104,7 @@
     <!-- MENU INTRODUCTION SECTION -->
     <section id="menuIntro" class="container bg_color_block_be">
       <div class="row">
-        <div id="menuIntroText" class="col">
+        <div id="menuIntroText" class="col-lg-6 col-xs-12">
           <div class="center_stuff">
             <h2>Menu</h2>
             <p>
@@ -124,7 +124,7 @@
             </div>
           </div>
         </div>
-        <div id="menuDemoPic" class="col">
+        <div id="menuDemoPic" class="col-lg-6 col-xs-12">
           <img
             src="https://haanya.neocities.org/images/menuphoto.png"
             title="Drinks"
@@ -275,11 +275,11 @@
         ) {
           document.getElementById("myTopnav").style.padding = "0px 0px";
           document.getElementById("logo").style.height = "100px";
-          document.getElementById("logo").style.height = "100px";
           let navlis = document.getElementsByClassName("navbar__link");
           for (i = 0; i < navlis.length; i++) {
             navlis[i].style.marginTop = "0px";
             navlis[i].style.marginBottom = "0px";
+            navlis[i].firstElementChild.style.fontSize = "24px";
           }
         } else {
           document.getElementById("myTopnav").style.padding = "40px 0px";
@@ -288,6 +288,7 @@
           for (i = 0; i < navlis.length; i++) {
             navlis[i].style.marginTop = "55px";
             navlis[i].style.marginBottom = "55px";
+            navlis[i].firstElementChild.style.fontSize = "30px";
           }
         }
       }

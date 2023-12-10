@@ -62,25 +62,25 @@
           </video>
         </div>
       </div>
-      <div id="aboutpic" class="col">
+      <div id="aboutpic" >
         <div class="slideshow-container">
           <div id="aboutpic_founder1" class="mySlides">
-            <img class="" src="founder_1.png" alt="Founder Thu Thuy"
+            <img class="" src="https://haanya.neocities.org/images/founder_1.png" alt="Founder Thu Thuy"
               title="Founder Thu Thuy" />
           </div>
           <div id="aboutpic_founder2" class="mySlides">
-            <img src="founder_2.png" style="width: 100%" />
+            <img src="https://haanya.neocities.org/images/founder_2.png" style="width: 100%" />
           </div>
 
           <div id="aboutpic_founder3" class="mySlides">
-            <img src="founder_3.png" style="width: 100%" />
+            <img src="https://haanya.neocities.org/images/founder_3.png" style="width: 100%" />
           </div>
 
 
         </div>
 
       </div>
-      <div class="col center_stuff">
+      <div class=" center_stuff">
         <h2>A Founder's Story</h2>
         <p>
           In the mist-kissed highlands of Vietnam, the story of Aromata Coffee
@@ -149,6 +149,7 @@
         for (i = 0; i < navlis.length; i++) {
           navlis[i].style.marginTop = "0px";
           navlis[i].style.marginBottom = "0px";
+          navlis[i].firstElementChild.style.fontSize = "24px";
         }
       } else {
         document.getElementById("myTopnav").style.padding = "40px 0px";
@@ -157,6 +158,7 @@
         for (i = 0; i < navlis.length; i++) {
           navlis[i].style.marginTop = "55px";
           navlis[i].style.marginBottom = "55px";
+          navlis[i].firstElementChild.style.fontSize = "30px";
         }
       }
     }

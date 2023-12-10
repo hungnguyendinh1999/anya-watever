@@ -90,11 +90,11 @@
   <section id="hoursLocation" class="content">
     <div class="container">
       <div class="row bg_color_block_be">
-        <div id="hoursPic" class="col" style="padding:0 !important;">
+        <div id="hoursPic" class="col-lg-6 col-xs-12" style="padding:0 !important;">
           <img src="https://haanya.neocities.org/images/employer.jpg" alt="employer"
             title="Aromata Coffee & Tea Employer" />
         </div>
-        <div id="hoursText" class="col">
+        <div id="hoursText" class="col-lg-6 col-xs-12">
           <div class="center_stuff">
             <h2 class="header">Who We Are</h2>
             <p class="statement1">
@@ -164,6 +164,7 @@
         for (i = 0; i < navlis.length; i++) {
           navlis[i].style.marginTop = "0px";
           navlis[i].style.marginBottom = "0px";
+          navlis[i].firstElementChild.style.fontSize = "24px";
         }
       } else {
         document.getElementById("myTopnav").style.padding = "40px 0px";
@@ -172,6 +173,7 @@
         for (i = 0; i < navlis.length; i++) {
           navlis[i].style.marginTop = "55px";
           navlis[i].style.marginBottom = "55px";
+          navlis[i].firstElementChild.style.fontSize = "30px";
         }
       }
     }
